@@ -47,3 +47,10 @@ año,fallecidos,siniestros,parque_vehicular,promedio,desviacion estandar,Estadar
 2017,1483,94879,5190704,390.1530549,21688.77844,0,0
 2018,1507,89311,5498895,366.8809162,22976.90051,0,0
 2019,1617,89983,5718409,369.6896226,23894.38619,0,0
+import pandas as pd
+
+# Cargar el conjunto de datos
+df = pd.read_csv('ruta/al/archivo/datos_accidentes.csv')  # Reemplaza 'ruta/al/archivo/' con la ubicación de tu archivo
+
+# Mostrar las primeras 10 filas
+print(df.head(10))
